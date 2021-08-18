@@ -14,12 +14,13 @@ interface PositiveNegativeLabelProps {
 }
 
 const PositiveNegativeLabel: FunctionComponent<PositiveNegativeLabelProps> = ({value, suffix}) => {
-    const Icon: FunctionComponent<IconProps> = ({value}) => value < 0 ? <CaretDownOutlined /> : <CaretUpOutlined />;
-    const val = Math.abs(+value);
-    const className =  +value < 0 ? 'negative-typography' : 'positive-typography';
+    const numberValue = +value;
+    const Icon: FunctionComponent<IconProps> = ({value}) => value < 0 ? <CaretDownOutlined data-testid='down-icon' /> : <CaretUpOutlined data-testid='up-icon'/>;
+    const val = Math.abs(numberValue);
+    const className =  numberValue < 0 ? 'negative-typography' : 'positive-typography';
     return (
         <div>
-            <Text className={className}>{<Icon value={+value}/>}{val}{suffix}</Text>
+            <Text className={className}>{<Icon value={numberValue}/>}<Text>{val}{suffix}</Text></Text>
         </div>
     )
 }
