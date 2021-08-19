@@ -1,8 +1,15 @@
 .container {
     display: flex;
     justify-content: space-between;
+    padding-left: 20px !important;
+    padding-right: 20px;
 }
 
 .name-typography {
     color: white !important;
+}
+
+.title {
+    font-weight: bold;
+    font-size: large;
 }

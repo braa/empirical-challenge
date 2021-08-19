@@ -17,8 +17,8 @@ const LabelWithTooltip: FunctionComponent<LabelWithTooltipProps> = ({text, toolt
             <Text>
                 {text}
                 {tooltip?
-                    <Tooltip className='tooltip' title={tooltip}>
-                        <InfoCircleOutlined />
+                    <Tooltip className='tooltip' title={tooltip} data-testid='tooltip'>
+                        <InfoCircleOutlined aria-label="tooltip-icon" data-testid='tooltip-icon'/>
                     </Tooltip>
                     : null
                 }

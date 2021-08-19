@@ -2,6 +2,7 @@ import React, { FunctionComponent } from 'react';
 import { Avatar, Typography } from 'antd';
 import { useUser } from '../services';
 import './AppHeader.css'
+import { AliwangwangOutlined } from '@ant-design/icons';
 
 const { Text } = Typography;
 
@@ -10,7 +11,7 @@ const AppHeader: FunctionComponent = () => {
 
   return (
     <div className='container'>
-      <Text className='name-typography'>Crypto App</Text>
+      <Text className='name-typography title'><AliwangwangOutlined /> Crypto App</Text>
       
       <div>
       {user &&

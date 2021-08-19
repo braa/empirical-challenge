@@ -1,7 +1,4 @@
 import { setupWorker } from 'msw'
 import { handlers } from './handlers'
 // This configures a Service Worker with the given request handlers.
-const worker = setupWorker(...handlers);
-worker.stop()
-
-export { worker }
+export const getWorker = () => setupWorker(...handlers);

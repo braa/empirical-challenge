@@ -20,7 +20,7 @@ const PositiveNegativeLabel: FunctionComponent<PositiveNegativeLabelProps> = ({v
     const className =  numberValue < 0 ? 'negative-typography' : 'positive-typography';
     return (
         <div>
-            <Text className={className}>{<Icon value={numberValue}/>}<Text>{val}{suffix}</Text></Text>
+            <Text className={className}>{<Icon value={numberValue}/>}<Text className={className}>{val}{suffix}</Text></Text>
         </div>
     )
 }
