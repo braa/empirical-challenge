@@ -1,7 +1,7 @@
 import React, { FunctionComponent } from 'react';
 import { Tabs } from 'antd';
 import Cryptocurrencies from '../pages/Criptocurrencies/Cryptocurrencies';
-import Converter from '../pages/Converter';
+import Converter from '../pages/Converter/Converter';
 import Charts from '../pages/Charts';
 import Optional from '../pages/Optional';
 const { TabPane } = Tabs;

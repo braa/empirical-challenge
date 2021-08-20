@@ -28,7 +28,7 @@ const columns = [
   },
   {
     title: 'Name',
-    dataIndex: 'name', //TODO add symbol
+    dataIndex: 'name',
     render: (name: string, row: any ) => <Text className='text-typography'>{name}  <Text className='symbol'>{row.symbol}</Text></Text>,
     sorter: true,
   },

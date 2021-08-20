@@ -5,7 +5,7 @@ interface ResponseCryptocurrencies {
 }
 
 const useCryptocurrencies = (start: number, limit: number, sort: string, sort_dir: string) => 
-    useApiService<ResponseCryptocurrencies>('/v1/cryptocurrency/listings/latest', {
+    useApiService<ResponseCryptocurrencies>('https://bra-node-proxy.herokuapp.com/v1/cryptocurrency/listings/latest', {
         params: {
             start,
             limit,

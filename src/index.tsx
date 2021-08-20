@@ -17,7 +17,9 @@ const renderApp = () =>
   );
 
   if (process.env.NODE_ENV === 'development') {
-    getWorker().start().then(()=>renderApp())
+    // getWorker().start().then(()=>renderApp())
+    renderApp();
+
   } else {
     renderApp();
   }
